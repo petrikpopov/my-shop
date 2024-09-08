@@ -7,20 +7,20 @@ export default function Header () {
                 <div className="wrapper-header">
                     <div className="logo-link-wrapper">
                         <Link to="/" className="logo-link">
-                            <img className="logo-img"/>
+                            <img src="/logoIcon.svg" className="logo-img" alt="logoIcon"/>
                             Ddsgnr
                         </Link>
                     </div>
 
-                    <div className="wrapper-menu">
+                    <nav className="wrapper-menu">
                         <ul className="base-nemu">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="about-us">About Us</Link></li>
-                            <li><Link to="products">Our Products</Link></li>
+                            <li><Link to="our-products">Our Products</Link></li>
                             <li><Link to="services">Services</Link></li>
                             <li><Link to="contact">Contact</Link></li>
                         </ul>
-                    </div>
+                    </nav>
 
                     <div className="search-cart">
                         <Link to="wishlist" className="wishlist">
