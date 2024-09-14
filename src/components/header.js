@@ -1,12 +1,14 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header () {
+
     return (<>
         <div className="my-header">
             <div className="container">
                 <div className="wrapper-header">
                     <div className="logo-link-wrapper">
-                        <Link to="/" className="logo-link">
+                        <Link to="home" className="logo-link">
                             <img src="/logoIcon.svg" className="logo-img" alt="logoIcon"/>
                             Ddsgnr
                         </Link>
@@ -14,11 +16,11 @@ export default function Header () {
 
                     <nav className="wrapper-menu">
                         <ul className="base-nemu">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="about-us">About Us</Link></li>
-                            <li><Link to="our-products">Our Products</Link></li>
-                            <li><Link to="services">Services</Link></li>
-                            <li><Link to="contact">Contact</Link></li>
+                            <li><NavLink to="home" className={({isActive}) => isActive ? "active-app" : ""}>Home</NavLink></li>
+                            <li><NavLink to="about-us" className={({isActive}) => isActive ? "active-app" : ""}>About Us</NavLink></li>
+                            <li><NavLink to="our-products" className={({isActive}) => isActive ? "active-app" : ""}>Our Products</NavLink></li>
+                            <li><NavLink to="services" className={({isActive})=>isActive ? "active-app" : ""}>Services</NavLink></li>
+                            <li><NavLink to="contact" className={({isActive}) => isActive ? "active-app" : ""}>Contact</NavLink></li>
                         </ul>
                     </nav>
 

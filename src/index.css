@@ -26,6 +26,20 @@ a {
     padding: 0 15px;
 }
 
+.active-app {
+    color: red;
+    font-weight: 700;
+}
+
+.list-type a {
+    padding: 3px 5px;
+}
+.list-type a:hover {
+    border-bottom: 2px solid red;
+    margin-top: 3px;
+    transition: 0.2s ease;
+}  
+
 .my-header {
     margin: 20px 0;
     padding: 20px 0;
@@ -60,13 +74,21 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-.content-wrapper-home {
-   display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+
+.wrapper-tovar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-type {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 60px 0;
 }
 
 .tovar-card {

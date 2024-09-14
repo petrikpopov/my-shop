@@ -6,6 +6,10 @@ import AboutUs from './components/aboutUs';
 import OurProducts from './components/our-products';
 import Services from './components/services';
 import Contact from './components/contact';
+import Man from './components/man';
+import Woman from './components/woman';
+import Children from './components/children';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 
@@ -83,11 +87,14 @@ function App() {
      <BrowserRouter>
       <Header></Header>
       <Routes>
-        <Route path='/' element={<HomePage tovar={tovar}/>}></Route>
+        <Route path='home' element={<HomePage tovar={tovar}/>}></Route>
         <Route path='about-us' element={<AboutUs/>}></Route>
         <Route path='our-products' element={<OurProducts/>}></Route>
         <Route path='services' element={<Services/>}></Route>
         <Route path='contact' element={<Contact/>}></Route>
+        <Route path='man' element={<Man/>}></Route>
+        <Route path='woman' element={<Woman/>}></Route>
+        <Route path='children' element={<Children/>}></Route>
       </Routes>
      </BrowserRouter>
     </>
