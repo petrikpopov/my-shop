@@ -78,10 +78,75 @@ const tovars = [
     price: 55
   }
 ]
+const manTovar = [
+  {
+    id: 1, 
+    img: "Image.png",
+    title: "Swimming Shorts",
+    brand: "Vans",
+    price: 55
+  },
+  {
+    id: 2, 
+    img: "Image-1.png",
+    title: "Cargos",
+    brand: "Vero Moda",
+    price: 55
+  },
+  {
+    id: 3, 
+    img: "Image-2.png",
+    title: "Dinner Jacket",
+    brand: "Bershka",
+    price: 55
+  },
+  {
+    id: 4, 
+    img: "Image-3.png",
+    title: "Cummerbund",
+    brand: "Nike",
+    price: 55
+  },
+  {
+    id: 5, 
+    img: "Image-4.png",
+    title: "Lingerie",
+    brand: "Uniqlo",
+    price: 55
+  },
+  {
+    id: 6, 
+    img: "Image-5.png",
+    title: "Belt",
+    brand: "Tommy-Jeans",
+    price: 55
+  },
+  {
+    id: 7, 
+    img: "Image-6.png",
+    title: "Coat",
+    brand: "Colin’s",
+    price: 55
+  },
+  {
+    id: 8, 
+    img: "Image-7.png",
+    title: "Jogging Suit",
+    brand: "Lormar",
+    price: 55
+  },
+  {
+    id: 9, 
+    img: "Image-4.png",
+    title: "Lingerie",
+    brand: "Uniqlo",
+    price: 55
+  }
+]
 
 function App() {
   const [tovar, setTovar] = useState(tovars)
-
+  const [tovarMan, setManTovar] = useState(manTovar)
   return (
     <>
      <BrowserRouter>
@@ -92,7 +157,7 @@ function App() {
         <Route path='our-products' element={<OurProducts/>}></Route>
         <Route path='services' element={<Services/>}></Route>
         <Route path='contact' element={<Contact/>}></Route>
-        <Route path='man' element={<Man/>}></Route>
+        <Route path='man' element={<Man tovar={tovarMan}/>}></Route>
         <Route path='woman' element={<Woman/>}></Route>
         <Route path='children' element={<Children/>}></Route>
       </Routes>
