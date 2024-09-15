@@ -100,6 +100,11 @@ a {
     gap: 5px;
 }
 
+.tovar-card img {
+    max-width: 304px;
+    max-height: 304px;
+}
+
 .add-cart {
     padding: 5px;
     border: 1px solid grey;
@@ -116,4 +121,28 @@ a {
 .add-cart:hover {
     background: rgb(209, 209, 209);
     transition: .6s;
+}
+
+.man-about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.top-popular {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.top-popular a {
+    padding: 5px;
+}
+
+.active-top {
+    border-bottom: 2px solid grey;
+    margin-top: 5px;
 }
